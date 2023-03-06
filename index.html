@@ -3,26 +3,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <link rel="icon" href="Logo.v1.png">
+<title>Rising Waters</title> 
 <style>
 * {
   box-sizing: border-box;
 }
-
+a:link {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(76, 4, 4);
+}
+a:visited {
+  color: rgb(0, 0, 0);
+}
 .menu {
   float: left;
   width: 20%;
   padding: 1%;
   background-color: 219ebc;
-}
-
-.menu a {
-  background-color: #ffffff;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: 023047;
-  
+  border-radius: 15px;
 }
 
 .main {
@@ -43,7 +45,7 @@
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu, .main, .right, .logo {
     width: 100%;
   }
 }
@@ -63,6 +65,7 @@
         text-decoration:none;
         font-size: 17px;
         font-weight: bold;
+        float: right;
         }
 
         .topnav a:hover {
@@ -78,19 +81,29 @@
         .topnav .icon {
         display: none;
         }
-        .topnav .logo {
-        display: flex;
+        .logo{
+           width: 20%;
+           float: left; 
+           margin-left: 20px;
+           margin-right: 30px;
+           margin-top: 0.3%;
+           display: inline;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 620px) {
         .topnav a:not(:first-child) {display: none;}
         .topnav a.icon {
-            float: right;
+            float: inline-end;
             display: block;
         }
         }
-
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 620px) {
+          .topnav .logo{
+          width: 50%;
+          display: block;
+        }
+        }
+        @media screen and (max-width: 620px) {
         .topnav.responsive {position: relative;}
         .topnav.responsive .icon {
             position: absolute;
@@ -101,11 +114,11 @@
             float: none;
             display: block;
             text-align: left;
-        }
-        .topnav.responsive .logo {
-            position:relative;
-            right: 0;
-            top: 0;
+        } 
+        .topnav.responsive .logo{
+          width: 50%;
+          display: block;
+          margin-right: 50%;
         }
         }
         * {box-sizing: border-box;}
@@ -157,10 +170,10 @@ img {vertical-align: middle;}
 
 <div style="background-color:8ecae6;text-align:center;">
     <div class="topnav" id="myTopnav">
-        <a href="flood.html" class="active">Home</a>
+        <img src="logo2.png" class="logo">
         <a href="#contact">Contact</a>
         <a href="https://give4good.org.in/india_flood2022"><b>Donate</b></a>
-        <img src="Logo.v1.png" class="logo"  style="float: right; width: 5%; height: inherit;">
+        <a href="index.html" class="active">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -203,21 +216,21 @@ img {vertical-align: middle;}
 <div style="overflow:auto">
   <div class="menu">
     <h2>Topics Covered</h2><br>
-    <li>Introduction</li><br>
-    <li>Causes of floods</li><br>
-    <li>Effects of floods</li><br>
-    <li>Preparing for floods</li><br>
-    <li>Responding to floods</li><br>
-    <li>Recovery from floods</li><br>
-    <li>Conclusion</li><br>
-    <li>News</li><br>
+    <a href="#Introduction"><li>Introduction</li></a><br>
+    <a href="#Causes"> <li>Causes of floods</li></a><br>
+    <a href="#Effects"><li>Effects of floods</li><br>
+    <a href="#Preparing"><li>Preparing for floods</li><br>
+    <a href="#Responding"><li>Responding to floods</li><br>
+    <a href="#Recovery"><li>Recovery from floods</li><br>
+    <a href="#Conclusion"><li>Conclusion</li><br>
+    <a href="#News"><li>News</li><br>
   </div>
 
   <div class="main">
-      <h1> Floods: Causes, Impacts, and Importance of Discussion</h1>
+      <h1 id="Introduction"> Floods: Causes, Impacts, and Importance of Discussion</h1>
       <p>When water covers typically dry land, a flood is a destructive natural disaster that happens. They can be br ought on by a number of things, including tropical storms, rapid snowmelt, and heavy rainfall. Floods have the potential to seriously harm communities, homes, and infrastructure, displacing residents and causing fatalities. Floods should be discussed because they can have a lasting effect on society and the economy, particularly in areas that are already at risk. The most frequent natural disaster in the world, floods annually affect millions of people. We can better prepare for and respond to floods if we are aware of their causes and effects.</p><br>
       <iframe width="100%" height="50%" src="https://www.youtube.com/embed/4PXj7bOD7IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
-      <h2>Causes of floods</h2>
+      <h2 id="Causes">Causes of floods</h2>
     <p>
         Floods are calamities caused by water overflowing onto normally dry land. They can be brought on by a number of things, such as deforestation and urbanisation, heavy rainfall, snowmelt, hurricanes, and dam failures. The topography of the area, the state of the soil, and the amount of rainfall all have an impact on how severe floods are.<br><br>
 
@@ -225,11 +238,10 @@ img {vertical-align: middle;}
 
         Urbanization and deforestation are two human-related activities that can increase the risk of flooding. Forests' capacity to absorb rainfall may be diminished by deforestation, increasing runoff and flooding. By decreasing the amount of permeable land, such as parks and fields, which can absorb rainfall, urbanisation can also cause flooding.<br><br>
 
-        The topography of the area has an impact on flood severity as well. Severe flooding is more likely to occur in flat areas with inadequate drainage systems. Similar to this, regions with saturated soil or those that have recently seen a lot of rain are more vulnerable. In conclusion, there are many potential causes of floods, and a number of factors can affect how severe they are. We can be better prepared and more responsive to floods when we are aware of their causes and contributing factors. The risk of flooding must be reduced, and appropriate emergency response plans must be in place to lessen the effects on communities, infrastructure, and residents.<br><br>
-    </p>
-    <h2>Effects of floods</h2>
-    <p>Floods have terrible effects on both people and communities. They have the potential to cause economic harm, property damage, fatalities, and human displacement. Homes, businesses, and infrastructure can all be destroyed by floodwaters, resulting in significant financial losses. Floods can also cause the death of people and the forced eviction of residents, causing both physical and psychological trauma. Floods can have a significant financial impact because the cost of repairs and other recovery efforts frequently exceeds $1 billion. In order to lessen the impact of floods on particular people, particular communities, and the entire society, it is crucial to take steps to reduce the risk of flooding and to have effective emergency response plans in place.</p>
-    <h2>Preparing for Floods</h2>
+        The topography of the area has an impact on flood severity as well. Severe flooding is more likely to occur in flat areas with inadequate drainage systems. Similar to this, regions with saturated soil or those that have recently seen a lot of rain are more vulnerable. In conclusion, there are many potential causes of floods, and a number of factors can affect how severe they are. We can be better prepared and more responsive to floods when we are aware of their causes and contributing factors. The risk of flooding must be reduced, and appropriate emergency response plans must be in place to lessen the effects on communities, infrastructure, and residents.<br>
+    <h2 id="Effects">Effects of floods</h2>
+    <p>Floods have terrible effects on both people and communities. They have the potential to cause economic harm, property damage, fatalities, and human displacement. Homes, businesses, and infrastructure can all be destroyed by floodwaters, resulting in significant financial losses. Floods can also cause the death of people and the forced eviction of residents, causing both physical and psychological trauma. Floods can have a significant financial impact because the cost of repairs and other recovery efforts frequently exceeds $1 billion. In order to lessen the impact of floods on particular people, particular communities, and the entire society, it is crucial to take steps to reduce the risk of flooding and to have effective emergency response plans in place.</p><br>
+    <h2 id="Preparing">Preparing for Floods</h2>
     <img src="flood 6.jpg" style="width: 100%; height: inherit;">
     <p>Preparing for floods is crucial to minimize their impact on individuals and communities. Here are some tips on how to prepare for floods:<br>
         <ul> 
@@ -252,17 +264,17 @@ img {vertical-align: middle;}
             </li>
         </ul>
         By following these tips, individuals and communities can be better prepared for floods and reduce their impact. It is essential to take preventive measures to minimize the damage caused by floods and to have proper emergency response plans in place to ensure the safety and well-being of everyone.
-    </p>
-    <h2>Responding to Floods</h2>
-    <p>Flood response involves taking action to minimize the damage caused by floods and to ensure the safety of people and property. This includes evacuating affected areas, providing emergency assistance to those in need, restoring infrastructure and essential services, and implementing long-term measures to reduce the risk of future flooding. A well-coordinated response involving government agencies, emergency services, and communities is crucial to ensure an effective and timely response to floods.</p>
-    <h2>Recovery from Flood</h2>
-    <p>Following a flood event, communities and affected infrastructure must be restored and rebuilt as part of the recovery process from flooding. This entails evaluating and fixing infrastructure and building damage, bringing back vital services, and helping those impacted both personally and professionally. Recovery efforts frequently take a while and call for cooperation between emergency services, local organisations, and governmental institutions. Effective recovery efforts take into account both the physical harm brought on by the flood as well as its emotional and psychological effects on people and communities. Creating thorough recovery plans that give the needs of affected communities top priority and guarantee their long-term sustainability and resilience is crucial.</p>
-    <h2>Conclusion</h2>
-    <p>In conclusion, floods can have a devastating effect on people and communities by resulting in property damage, fatalities, evictions, and economic costs. However, taking proactive steps to prevent floods, acting quickly in the event of a flood, and putting comprehensive recovery plans into place can help lessen their effects and guarantee everyone's safety and well-being. People can take action to prepare for floods by making an emergency kit, a family emergency plan, and understanding the risks in their area. To ensure their safety and the safety of their loved ones, we urge everyone to take action and get ready for floods. Together, let's create sustainable and resilient communities that can withstand the difficulties presented by floods and other natural disasters.</p>
+    </p><br><br>
+    <h2 id="Responding">Responding to Floods</h2>
+    <p>Flood response involves taking action to minimize the damage caused by floods and to ensure the safety of people and property. This includes evacuating affected areas, providing emergency assistance to those in need, restoring infrastructure and essential services, and implementing long-term measures to reduce the risk of future flooding. A well-coordinated response involving government agencies, emergency services, and communities is crucial to ensure an effective and timely response to floods.</p><br>
+    <h2 id="Recovery">Recovery from Flood</h2>
+    <p>Following a flood event, communities and affected infrastructure must be restored and rebuilt as part of the recovery process from flooding. This entails evaluating and fixing infrastructure and building damage, bringing back vital services, and helping those impacted both personally and professionally. Recovery efforts frequently take a while and call for cooperation between emergency services, local organisations, and governmental institutions. Effective recovery efforts take into account both the physical harm brought on by the flood as well as its emotional and psychological effects on people and communities. Creating thorough recovery plans that give the needs of affected communities top priority and guarantee their long-term sustainability and resilience is crucial.</p><br>
+    <h2 id="Conclusion">Conclusion</h2>
+    <p>In conclusion, floods can have a devastating effect on people and communities by resulting in property damage, fatalities, evictions, and economic costs. However, taking proactive steps to prevent floods, acting quickly in the event of a flood, and putting comprehensive recovery plans into place can help lessen their effects and guarantee everyone's safety and well-being. People can take action to prepare for floods by making an emergency kit, a family emergency plan, and understanding the risks in their area. To ensure their safety and the safety of their loved ones, we urge everyone to take action and get ready for floods. Together, let's create sustainable and resilient communities that can withstand the difficulties presented by floods and other natural disasters.</p><br>
   </div>
 
   <div class="right">
-    <h2>News</h2>
+    <h2 id="News">News</h2>
     <p>
         <li><b>Floods in Kerala, India (2018):</b> Heavy rainfall led to severe flooding and landslides, causing significant property damage and loss of life.<br><br>
 
