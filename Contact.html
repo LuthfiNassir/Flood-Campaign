@@ -210,13 +210,13 @@ input[type=submit]:hover {
 
 <div style="overflow:auto; border-radius: 25px;padding-top: 2%;">
   <div class="main">
-    <form action="/action_page.php">
+    <form action="contactdb.php" method="post">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="Firstname" placeholder="Your name.." required>
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="Lastname" placeholder="Your last name.." required>
         <label for="lname">Email Id</label><br>
-        <input type="email" id="ename" name="Email Id:" placeholder="Your mail id.." required><br>
+        <input type="email" id="ename" name="Email" placeholder="Your mail id.." required><br>
         <label for="country">Country</label>
         <select id="country" name="country">
             <option value="australia">India</option>
@@ -228,7 +228,7 @@ input[type=submit]:hover {
             <option value="usa">Japan</option>
         </select>
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <textarea id="subject" name="Suggestion" placeholder="Write something.." style="height:170px" required></textarea>
         <center><a href="thanks.html"><input type="submit" value="Submit"></center></a>  
       </form>
   </div>

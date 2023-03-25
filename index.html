@@ -1,101 +1,136 @@
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="icon" href="Logo.v1.png">
-<title>Rising Waters</title> 
-<style>
-  
-* {
-  box-sizing: border-box;
-}
-a:link {
-  text-decoration: none;
-  color: #000000;
-}
-a:hover {
-  text-decoration: underline;
-  color: rgb(76, 4, 4);
-}
-a:visited {
-  color: rgb(0, 0, 0);
-}
-.menu {
-  float: left;
-  width: 20%;
-  padding: 1%;
-  background-color: 219ebc;
-  border-radius: 15px;
-}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="Logo.v1.png">
+    <title>Rising Waters</title> 
+    <style>
+    
+      * {
+        box-sizing: border-box;
+      }
+      a:link {
+        text-decoration: none;
+        color: #000000;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: rgb(76, 4, 4);
+      }
+      a:visited {
+        color: rgb(0, 0, 0);
+      }
+      .statistic{
+        float: left;
+        width: 100%;
+        background-color: 023047;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        padding: 2%;
+      }
+      .statistic1 {
+        float: left;
+        width: 19%;
+        height: 40%;
+        color: fb8500;
+        background-color: 023047;
+        border-radius: 70%;
+        text-align: center;
+        padding-top: 5%;
+        border-color: #ffffff;
+        border-width: 3px;
+        border-style: solid;
+        margin-left: 3%;
+        margin-right: 3%;
+        box-shadow: 5px 5px 5px 2px rgb(0, 0, 0);
+      }
+      .statistic1:hover{
+        background-color: 8ecae6;
+        border: 3px solid orange;
+        color: 023047;
+        box-shadow: 3px 3px 3px 2px rgb(255, 233, 132);
+      }
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .statistic1 {
+          width: 70%;
+          padding: 15%;
+          margin-bottom: 10%;
+          margin-left: 15%;
+          height: 30%;
+        }
+        .statistic{
+          padding: 10%;
+        }
+      }
+      .menu {
+        float: left;
+        width: 20%;
+        padding: 1%;
+        background-color: 219ebc;
+        border-radius: 15px;
+      }
 
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  color: #000000;
-}
+      .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+        color: #000000;
+      }
 
-.right {
-  background-color: 023047;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  color: #ffffff;
-  margin-top: 7px;
-}
-.footer{
-  background-color:fb8500;
-}
-.foot1 {
-  float: left;
-  width: 33.33%;
-  padding-top: 2%;
-  padding-left: 2%;
-  padding-bottom: 2.4%;
-  background-color:fb8500;
-}
-.foot2 {
-  float: left;
-  width: 33.33%;
-  padding-top: 2%;
-  padding-left: 2%;
-  padding-bottom: 2%;
-  background-color:fb8500;
-}
-.foot3 {
-  float: left;
-  width: 33.33%;
-  padding-top: 2%;
-  padding-left: 2%;
-  padding-bottom: 2%;
-  background-color:fb8500;
-}
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right, .logo {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .foot1 {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-   .foot2, .foot3 {
-    width: 50%;
-  }
-}
-.topnav {
+      .right {
+        background-color: 023047;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        color: #ffffff;
+        margin-top: 7px;
+      }
+      .footer{
+        background-color:fb8500;
+      }
+      .foot1 {
+        float: left;
+        width: 33.33%;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-bottom: 2.4%;
+        background-color:fb8500;
+      }
+      .foot2 {
+        float: left;
+        width: 33.33%;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-bottom: 2%;
+        background-color:fb8500;
+      }
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .menu, .main, .right, .logo {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .foot1 {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .foot2 {
+          width: 50%;
+        }
+      }
+      .topnav {
         overflow: hidden;
         background-color: 023047;
         box-shadow: 5px 5px 5px 2px rgb(0, 0, 0);
         font-family:"Trirong", serif;
-        }
+      }
 
-        .topnav a {
+      .topnav a {
         float: left;
         display: block;
         color: fb8500;
@@ -105,265 +140,272 @@ a:visited {
         font-size: 17px;
         font-weight: bold;
         float: right;
-        }
+      }
 
-        .topnav a:hover {
+      .topnav a:hover {
         background-color: 219ebc;
         color: rgb(254, 254, 254);
-        }
+      }
 
-        .topnav a.active {
+      .topnav a.active {
         background-color: 8ecae6;
         color: 023047;
-        }
+      }
 
-        .topnav .icon {
+      .topnav .icon {
         display: none;
         }
-        .logo{
-           width: 20%;
-           float: left; 
-           margin-left: 20px;
-           margin-right: 30px;
-           margin-top: 0.3%;
-           display: inline;
-        }
-
-        @media screen and (max-width: 600px) {
+      .logo{
+        width: 20%;
+        float: left; 
+        margin-left: 20px;
+        margin-right: 30px;
+        margin-top: 0.3%;
+        display: inline;
+      }
+       @media screen and (max-width: 600px) {
         .topnav a:not(:first-child) {display: none;}
         .topnav a.icon {
-            float: right;
-            display: block;
+          float: right;
+          display: block;
         }
-        }
-        @media screen and (max-width: 600px) {
-          .topnav .logo{
+      }
+      @media screen and (max-width: 600px) {
+        .topnav .logo{
           width: 60%;
           display: block;
           padding-top: 15px;
         }
-        }
-        @media screen and (max-width: 600px) {
+      }
+      @media screen and (max-width: 600px) {
         .topnav.responsive {position: relative;}
         .topnav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
         }
         .topnav.responsive a {
-            float: none;
-            display: block;
-            text-align: left;
+          float: none;
+          display: block;
+          text-align: left;
         } 
         .topnav.responsive .logo{
           width: 0%;
           display: block;
           margin-right: 50%;
         }
-        }
-        * {box-sizing: border-box;}
-          body {font-family: Verdana, sans-serif;}
-          .mySlides {display: none;}
-          img {vertical-align: middle;}
+      }
+      * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1500px;
+        position: relative;
+        margin: auto;
+        margin-top: 10px;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 0px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: none;
+        transition: background-color 0.6s ease;
+      }
+      .active {
+        background-color: #717171;
+      }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1500px;
-  position: relative;
-  margin: auto;
-  margin-top: 10px;
-}
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 0px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: none;
-  transition: background-color 0.6s ease;
-}
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
 
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-</head>
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+    </style>
+  </head>
 <body style="font-family:Verdana;background-color: 8ecae6;">
 
-<div style="background-color:8ecae6;text-align:center;">
+  <div style="background-color:8ecae6;text-align:center;">
     <div class="topnav" id="myTopnav">
-        <img src="logo2.png" class="logo">
-        <a href="News.html">News</a>
-        <a href="Contact.html">Contact</a>
-        <a href="https://give4good.org.in/india_flood2022"><b>Donate</b></a>
-        <a href="index.html" class="active">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="material-icons" style="font-size:36px">menu</i>
-        </a>
+      <img src="logo2.png" class="logo">
+      <a href="News.html">News</a>
+      <a href="Contact.html">Contact</a>
+      <a href="https://give4good.org.in/india_flood2022"><b>Donate</b></a>
+      <a href="index.html" class="active">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="material-icons" style="font-size:36px">menu</i>
+      </a>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="flood 1.png" style="width:100% ;height: 350px;" alt="india flood">
+      </div> 
+      <div class="mySlides fade">
+        <img src="flood 5.png" style="width:100%; height: 350px;" alt="flood">
       </div>
-      <div class="slideshow-container">
-  
-          <div class="mySlides fade">
-          <img src="flood 1.png" style="width:100% ;height: 350px;" alt="india flood">
-          </div>
-          
-          <div class="mySlides fade">
-          <img src="flood 5.png" style="width:100%; height: 350px;" alt="flood">
-          </div>
-          
-          <div class="mySlides fade">
-          <img src="flood 2.png" style="width:100%; height: 350px;" alt="assam flood">
-          </div>
-  
-          <div class="mySlides fade">
-              <img src="flood 4.png" style="width:100%; height: 350px;" alt="kerala flood">
-          </div>
-  
-          <div class="mySlides fade">
-              <img src="flood 3.png" style="width:100%; height: 350px;" alt="Donation campaign">
-          </div>
-          
-          </div>
-          <br>
-          
-          <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          </div>
+      <div class="mySlides fade">
+        <img src="flood 2.png" style="width:100%; height: 350px;" alt="assam flood">
       </div>
-</div>
-
-<div style="overflow:auto">
-  <div class="menu">
-    <h2>Topics Covered</h2><br>
-    <ul>
-      <a href="#Introduction"><li>Introduction</li></a><br>
-      <a href="#Causes"> <li>Causes of floods</li></a><br>
-      <a href="#Effects"><li>Effects of floods</li><br>
-      <a href="#Preparing"><li>Preparing for floods</li><br>
-      <a href="#Responding"><li>Responding to floods</li><br>
-      <a href="#Recovery"><li>Recovery from floods</li><br>
-      <a href="#Conclusion"><li>Conclusion</li><br>
-      <a href="News.html"><li>News</li><br>
-      </ul>
+      <div class="mySlides fade">
+        <img src="flood 4.png" style="width:100%; height: 350px;" alt="kerala flood">
+      </div>
+      <div class="mySlides fade">
+        <img src="flood 3.png" style="width:100%; height: 350px;" alt="Donation campaign">
+      </div>
+            
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
   </div>
-
-  <div class="main">
-      <h1 id="Introduction"> Floods: Causes, Impacts, and Importance of Discussion</h1>
-      <p>When water covers typically dry land, a flood is a destructive natural disaster that happens. They can be br ought on by a number of things, including tropical storms, rapid snowmelt, and heavy rainfall. Floods have the potential to seriously harm communities, homes, and infrastructure, displacing residents and causing fatalities. Floods should be discussed because they can have a lasting effect on society and the economy, particularly in areas that are already at risk. The most frequent natural disaster in the world, floods annually affect millions of people. We can better prepare for and respond to floods if we are aware of their causes and effects.</p><br>
-      <iframe width="100%" height="50%" src="https://www.youtube.com/embed/4PXj7bOD7IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
-      <h2 id="Causes"> <i class="material-icons"style="font-size:30px;">chevron_right</i> Causes of floods</h2>
-    <p>
-        Floods are calamities caused by water overflowing onto normally dry land. They can be brought on by a number of things, such as deforestation and urbanisation, heavy rainfall, snowmelt, hurricanes, and dam failures. The topography of the area, the state of the soil, and the amount of rainfall all have an impact on how severe floods are.<br><br>
-
-        One of the most frequent causes of floods is heavy rainfall, especially in places with inadequate drainage and infrastructure. The same holds true for rivers and streams, which can overflow their banks as a result of excessively quick snowmelt. When they make landfall, hurricanes and tropical storms can also bring about significant flooding and damage.<br><br>
-
-        Urbanization and deforestation are two human-related activities that can increase the risk of flooding. Forests' capacity to absorb rainfall may be diminished by deforestation, increasing runoff and flooding. By decreasing the amount of permeable land, such as parks and fields, which can absorb rainfall, urbanisation can also cause flooding.<br><br>
-
-        The topography of the area has an impact on flood severity as well. Severe flooding is more likely to occur in flat areas with inadequate drainage systems. Similar to this, regions with saturated soil or those that have recently seen a lot of rain are more vulnerable. In conclusion, there are many potential causes of floods, and a number of factors can affect how severe they are. We can be better prepared and more responsive to floods when we are aware of their causes and contributing factors. The risk of flooding must be reduced, and appropriate emergency response plans must be in place to lessen the effects on communities, infrastructure, and residents.<br><br>
-    <h2 id="Effects"><i class="material-icons"style="font-size:30px;">chevron_right</i>Effects of floods</h2>
-    <p>Floods have terrible effects on both people and communities. They have the potential to cause economic harm, property damage, fatalities, and human displacement. Homes, businesses, and infrastructure can all be destroyed by floodwaters, resulting in significant financial losses. Floods can also cause the death of people and the forced eviction of residents, causing both physical and psychological trauma. Floods can have a significant financial impact because the cost of repairs and other recovery efforts frequently exceeds $1 billion. In order to lessen the impact of floods on particular people, particular communities, and the entire society, it is crucial to take steps to reduce the risk of flooding and to have effective emergency response plans in place.</p><br>
-    <h2 id="Preparing"><i class="material-icons"style="font-size:30px;">chevron_right</i>Preparing for Floods</h2>
-    <img src="flood 6.jpg" style="width: 100%; height: inherit;">
-    <p>Preparing for floods is crucial to minimize their impact on individuals and communities. Here are some tips on how to prepare for floods:<br>
-        <ul> 
-            <li>Have an emergency kit: Prepare an emergency kit with essential items such as food,water,medicines, first aid kit, flashlights, and batteries. Keep it in an easily accessible place in case of an emergency.</li>
-        
-            <li>
-                Create a family emergency plan: Discuss and create a family emergency plan with a clear understanding of what to do in case of flooding. Determine safe evacuation routes and meeting places for family members.
-            </li>
-            
-            <li>
-                Know the risks in your area: Research and understand the flood risks in your area. Stay informed about weather forecasts and flood warnings to take necessary precautions.
-            </li>
-            
-            <li>
-                Protect your property: Take steps to protect your property, such as installing flood barriers, raising electrical systems, and moving valuable items to a higher floor.
-            </li>
-            <li>
-                
-                Stay informed: Stay up-to-date with information about the flood situation in your area, and follow advice and warnings issued by local authorities.
-            </li>
+  <div style="overflow:auto">
+    <div class="statistic">
+      <div class="statistic1">
+        <h2 style="font-size: 150%;">40 Million</h2>
+        <p style="color: #ffffff;">People affected</p>
+      </div>
+      <div class="statistic1">
+        <h2 style="font-size: 150%;">223</h2>
+        <p style="color: #ffffff;">Flood disaster<br>was reported in<br> 2021</p>
+      </div>
+      <div class="statistic1">
+        <h2 style="font-size: 150%;">161K+</h2>
+        <p style="color: #ffffff;">Reported deaths <br>worldwide due to <br>floods.</p>
+      </div>
+      <div class="statistic1">
+        <h2 style="font-size: 150%;">3.8 mil+</h2>
+        <p style="color: #ffffff;font-size: 70%;">Causality reported <br>worldwide due to <br>floods.</p>
+      </div>
+    </div>
+    <div class="menu">
+      <h2>Topics Covered</h2><br>
+      <ul>
+        <a href="#Introduction"><li>Introduction</li></a><br>
+        <a href="#Causes"> <li>Causes of floods</li></a><br>
+        <a href="#Effects"><li>Effects of floods</li><br>
+        <a href="#Preparing"><li>Preparing for floods</li><br>
+        <a href="#Responding"><li>Responding to floods</li><br>
+        <a href="#Recovery"><li>Recovery from floods</li><br>
+        <a href="#Conclusion"><li>Conclusion</li><br>
+        <a href="News.html"><li>News</li><br>
         </ul>
+    </div>
+
+    <div class="main">
+        <h1 id="Introduction"> Floods: Causes, Impacts, and Importance of Discussion</h1>
+        <p>When water covers typically dry land, a flood is a destructive natural disaster that happens. They can be br ought on by a number of things, including tropical storms, rapid snowmelt, and heavy rainfall. Floods have the potential to seriously harm communities, homes, and infrastructure, displacing residents and causing fatalities. Floods should be discussed because they can have a lasting effect on society and the economy, particularly in areas that are already at risk. The most frequent natural disaster in the world, floods annually affect millions of people. We can better prepare for and respond to floods if we are aware of their causes and effects.</p><br>
+        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/4PXj7bOD7IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+        <h2 id="Causes"> <i class="material-icons"style="font-size:30px;">chevron_right</i> Causes of floods</h2>
+        <p>
+          Floods are calamities caused by water overflowing onto normally dry land. They can be brought on by a number of things, such as deforestation and urbanisation, heavy rainfall, snowmelt, hurricanes, and dam failures. The topography of the area, the state of the soil, and the amount of rainfall all have an impact on how severe floods are.<br><br>
+
+          One of the most frequent causes of floods is heavy rainfall, especially in places with inadequate drainage and infrastructure. The same holds true for rivers and streams, which can overflow their banks as a result of excessively quick snowmelt. When they make landfall, hurricanes and tropical storms can also bring about significant flooding and damage.<br><br>
+
+          Urbanization and deforestation are two human-related activities that can increase the risk of flooding. Forests' capacity to absorb rainfall may be diminished by deforestation, increasing runoff and flooding. By decreasing the amount of permeable land, such as parks and fields, which can absorb rainfall, urbanisation can also cause flooding.<br><br>
+
+          The topography of the area has an impact on flood severity as well. Severe flooding is more likely to occur in flat areas with inadequate drainage systems. Similar to this, regions with saturated soil or those that have recently seen a lot of rain are more vulnerable. In conclusion, there are many potential causes of floods, and a number of factors can affect how severe they are. We can be better prepared and more responsive to floods when we are aware of their causes and contributing factors. The risk of flooding must be reduced, and appropriate emergency response plans must be in place to lessen the effects on communities, infrastructure, and residents.<br><br>
+        </p>
+        <h2 id="Effects"><i class="material-icons"style="font-size:30px;">chevron_right</i>Effects of floods</h2>
+        <p>Floods have terrible effects on both people and communities. They have the potential to cause economic harm, property damage, fatalities, and human displacement. Homes, businesses, and infrastructure can all be destroyed by floodwaters, resulting in significant financial losses. Floods can also cause the death of people and the forced eviction of residents, causing both physical and psychological trauma. Floods can have a significant financial impact because the cost of repairs and other recovery efforts frequently exceeds $1 billion. In order to lessen the impact of floods on particular people, particular communities, and the entire society, it is crucial to take steps to reduce the risk of flooding and to have effective emergency response plans in place.</p><br>
+        <h2 id="Preparing"><i class="material-icons"style="font-size:30px;">chevron_right</i>Preparing for Floods</h2>
+        <img src="flood 6.jpg" style="width: 100%; height: inherit;">
+        <p>Preparing for floods is crucial to minimize their impact on individuals and communities. Here are some tips on how to prepare for floods:<br>
+          <ul> 
+              <li>Have an emergency kit: Prepare an emergency kit with essential items such as food,water,medicines, first aid kit, flashlights, and batteries. Keep it in an easily accessible place in case of an emergency.</li>
+          
+              <li>
+                  Create a family emergency plan: Discuss and create a family emergency plan with a clear understanding of what to do in case of flooding. Determine safe evacuation routes and meeting places for family members.
+              </li>
+              
+              <li>
+                  Know the risks in your area: Research and understand the flood risks in your area. Stay informed about weather forecasts and flood warnings to take necessary precautions.
+              </li>
+              
+              <li>
+                  Protect your property: Take steps to protect your property, such as installing flood barriers, raising electrical systems, and moving valuable items to a higher floor.
+              </li>
+              <li>
+                  
+                  Stay informed: Stay up-to-date with information about the flood situation in your area, and follow advice and warnings issued by local authorities.
+              </li>
+          </ul>
         By following these tips, individuals and communities can be better prepared for floods and reduce their impact. It is essential to take preventive measures to minimize the damage caused by floods and to have proper emergency response plans in place to ensure the safety and well-being of everyone.
-    </p><br><br>
-    <h2 id="Responding"><i class="material-icons"style="font-size:30px;">chevron_right</i>Responding to Floods</h2>
-    <p>Flood response involves taking action to minimize the damage caused by floods and to ensure the safety of people and property. This includes evacuating affected areas, providing emergency assistance to those in need, restoring infrastructure and essential services, and implementing long-term measures to reduce the risk of future flooding. A well-coordinated response involving government agencies, emergency services, and communities is crucial to ensure an effective and timely response to floods.</p><br>
-    <h2 id="Recovery"><i class="material-icons"style="font-size:30px;">chevron_right</i>Recovery from Flood</h2>
-    <p>Following a flood event, communities and affected infrastructure must be restored and rebuilt as part of the recovery process from flooding. This entails evaluating and fixing infrastructure and building damage, bringing back vital services, and helping those impacted both personally and professionally. Recovery efforts frequently take a while and call for cooperation between emergency services, local organisations, and governmental institutions. Effective recovery efforts take into account both the physical harm brought on by the flood as well as its emotional and psychological effects on people and communities. Creating thorough recovery plans that give the needs of affected communities top priority and guarantee their long-term sustainability and resilience is crucial.</p><br>
-    <h2 id="Conclusion"><i class="material-icons"style="font-size:30px;">chevron_right</i>Conclusion</h2>
-    <p>In conclusion, floods can have a devastating effect on people and communities by resulting in property damage, fatalities, evictions, and economic costs. However, taking proactive steps to prevent floods, acting quickly in the event of a flood, and putting comprehensive recovery plans into place can help lessen their effects and guarantee everyone's safety and well-being. People can take action to prepare for floods by making an emergency kit, a family emergency plan, and understanding the risks in their area. To ensure their safety and the safety of their loved ones, we urge everyone to take action and get ready for floods. Together, let's create sustainable and resilient communities that can withstand the difficulties presented by floods and other natural disasters.</p><br>
-  </div>
-
-  <div class="right">
-    <h2 id="News">News</h2>
-    <p>
-        <li><b>Floods in Kerala, India (2018):</b> Heavy rainfall led to severe flooding and landslides, causing significant property damage and loss of life.<br><br>
-
-        <li> <b>Hurricane Harvey, United States (2017):</b> The hurricane caused severe flooding in Texas and Louisiana, resulting in significant property damage and loss of life.<br><br></li>
-        
-        <li><b>Flooding in Southern China (2020):</b> Heavy rainfall caused widespread flooding in southern China, affecting millions of people and causing significant property damage.<br><br>
-        
-        <li><b>Floods in Iran (2019):</b> Heavy rainfall caused severe flooding in Iran, leading to property damage and loss of life.<br><br>
-        
-        <li><b>Cyclone Idai, Mozambique (2019):</b> The cyclone caused severe flooding in Mozambique, Zimbabwe, and Malawi, leading to significant property damage and loss of life.<br><br>
-        
-        <li><b>Floods in Jakarta, Indonesia (2020):</b> Heavy rainfall led to severe flooding in Jakarta, causing significant property damage and loss of life.<br><br>
-        
-        <li><b>Floods in the Philippines (2020):</b> Heavy rainfall caused severe flooding in the Philippines, leading to property damage and loss of life.<br><br>
-        
-        <li><b>Floods in Venice, Italy (2019):</b> High tides and heavy rainfall caused severe flooding in Venice, leading to property damage and the loss of cultural heritage sites.<br><br></p>
-  </div>
-  <div class="footer">
-    <div class="foot1">
-      <img src="logo2.png" style="width: 80%;">
+      </p><br><br>
+      <h2 id="Responding"><i class="material-icons"style="font-size:30px;">chevron_right</i>Responding to Floods</h2>
+      <p>Flood response involves taking action to minimize the damage caused by floods and to ensure the safety of people and property. This includes evacuating affected areas, providing emergency assistance to those in need, restoring infrastructure and essential services, and implementing long-term measures to reduce the risk of future flooding. A well-coordinated response involving government agencies, emergency services, and communities is crucial to ensure an effective and timely response to floods.</p><br>
+      <h2 id="Recovery"><i class="material-icons"style="font-size:30px;">chevron_right</i>Recovery from Flood</h2>
+      <p>Following a flood event, communities and affected infrastructure must be restored and rebuilt as part of the recovery process from flooding. This entails evaluating and fixing infrastructure and building damage, bringing back vital services, and helping those impacted both personally and professionally. Recovery efforts frequently take a while and call for cooperation between emergency services, local organisations, and governmental institutions. Effective recovery efforts take into account both the physical harm brought on by the flood as well as its emotional and psychological effects on people and communities. Creating thorough recovery plans that give the needs of affected communities top priority and guarantee their long-term sustainability and resilience is crucial.</p><br>
+      <h2 id="Conclusion"><i class="material-icons"style="font-size:30px;">chevron_right</i>Conclusion</h2>
+      <p>In conclusion, floods can have a devastating effect on people and communities by resulting in property damage, fatalities, evictions, and economic costs. However, taking proactive steps to prevent floods, acting quickly in the event of a flood, and putting comprehensive recovery plans into place can help lessen their effects and guarantee everyone's safety and well-being. People can take action to prepare for floods by making an emergency kit, a family emergency plan, and understanding the risks in their area. To ensure their safety and the safety of their loved ones, we urge everyone to take action and get ready for floods. Together, let's create sustainable and resilient communities that can withstand the difficulties presented by floods and other natural disasters.</p><br>
     </div>
-  
-    <div class="foot2">
-      <i class="material-icons">bubble_chart</i>
-        <a href="News.html" class="footer-link">News</a><br>
-  
-      <i class="material-icons">bubble_chart</i>
-        <a href="https://give4good.org.in/india_flood2022" class="footer-link">Donate</a><br>
-  
-      <i class="material-icons">bubble_chart</i>
-        <a href="Contact.html" class="footer-link">Contact Us</a>
+
+    <div class="right">
+      <h2 id="News">News</h2>
+      <p>
+          <li><b>Floods in Kerala, India (2018):</b> Heavy rainfall led to severe flooding and landslides, causing significant property damage and loss of life.<br><br>
+
+          <li> <b>Hurricane Harvey, United States (2017):</b> The hurricane caused severe flooding in Texas and Louisiana, resulting in significant property damage and loss of life.<br><br></li>
+          
+          <li><b>Flooding in Southern China (2020):</b> Heavy rainfall caused widespread flooding in southern China, affecting millions of people and causing significant property damage.<br><br>
+          
+          <li><b>Floods in Iran (2019):</b> Heavy rainfall caused severe flooding in Iran, leading to property damage and loss of life.<br><br>
+          
+          <li><b>Cyclone Idai, Mozambique (2019):</b> The cyclone caused severe flooding in Mozambique, Zimbabwe, and Malawi, leading to significant property damage and loss of life.<br><br>
+          
+          <li><b>Floods in Jakarta, Indonesia (2020):</b> Heavy rainfall led to severe flooding in Jakarta, causing significant property damage and loss of life.<br><br>
+          
+          <li><b>Floods in the Philippines (2020):</b> Heavy rainfall caused severe flooding in the Philippines, leading to property damage and loss of life.<br><br>
+          
+          <li><b>Floods in Venice, Italy (2019):</b> High tides and heavy rainfall caused severe flooding in Venice, leading to property damage and the loss of cultural heritage sites.<br><br></p>
     </div>
-  
-    <div class="foot3">
-      <i class="material-icons">bubble_chart</i>
-        <a href="Contact.html" class="footer-link">Legal Stuff</a><br>
+    <div class="footer">
+      <div class="foot1">
+        <img src="logo2.png" style="width: 80%;">
+      </div>
     
-      <i class="material-icons">bubble_chart</i>
-        <a href="Contact.html" class="footer-link">Cookie Policy</a><br>
+      <div class="foot2">
+        <i class="material-icons">bubble_chart</i>
+          <a href="News.html" class="footer-link">News</a><br>
     
         <i class="material-icons">bubble_chart</i>
-        <a href="Contact.html" class="footer-link">Term of Use </a>
-    </div>
+          <a href="https://give4good.org.in/india_flood2022" class="footer-link">Donate</a><br>
+    
+        <i class="material-icons">bubble_chart</i>
+          <a href="Contact.html" class="footer-link">Contact Us</a>
+      </div>
+    
+      <div class="foot2">
+        <i class="material-icons">bubble_chart</i>
+          <a href="Contact.html" class="footer-link">Legal Stuff</a><br>
+      
+        <i class="material-icons">bubble_chart</i>
+          <a href="Contact.html" class="footer-link">Cookie Policy</a><br>
+      
+          <i class="material-icons">bubble_chart</i>
+          <a href="Contact.html" class="footer-link">Term of Use </a>
+      </div>
 
+    </div>
   </div>
-</div>
 
 <div style="background-color:023047;text-align:center;padding:10px;margin-top:7px; color: #ffffff;">© copyright Rising_Waters.com</div>
 <script>
